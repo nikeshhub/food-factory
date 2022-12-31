@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: orange;
+  --secondary-color: rgb(247, 199, 110);
+  --white-color: #fff;
+  --black-color: black;
+
+  /* text color */
+  --text-black: black;
+  --text-white: white;
+  --text-orange: orange;
+}
+.orange {
+  color: orange;
+  border: none;
+}
+
+/* custom css */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 100%;
+  font-weight: bolder;
+}
+h1 {
+  font-size: 3.125rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+h4 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 0.0625rem;
+}
+
+.main-btn {
+  padding: 0.625rem 1.875rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0 0.125rem 0.635rem -0.0635rem rgb(0 0 0/19%);
+  transition: all 0.4s ease-out 0s;
+  border: 0.1875rem solid var(--primary-color);
+  background-color: orange;
+  color: black;
+  border-radius: 20px;
+}
+.main-btn:hover {
+  background-color: transparent;
+}
+
+.wrapper {
+  padding: 6.25rem 0 6.25rem 0;
+}
+.text-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* .counter-section h2{
+
+}
+.testomonial-section h2{
+
+}
+.book-section h2{
+
+} */
+/* Nav bar */
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background-color: blanchedalmond;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+.nav-brand {
+  font-size: 2rem;
+}
+.nav-item {
+  padding: 0 0.625rem;
+  transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  border: unset;
+  box-shadow: none;
+}
+.nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: black;
+  letter-spacing: 0.0625rem;
+}
+.navigation-wrap .main-btn {
+  padding: 0.3125rem 1.4375rem;
+  box-shadow: none;
+  margin-left: 2rem;
+}
+
+#navbarNav ul li ::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ff9a1e;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+#navbarNav ul li a:hover::after {
+  width: 100%;
+}
+#navbarNav ul li a:hover {
+  color: black;
+}
+
+
+/* section-1 */
+.top-banner {
+  width: 100%;
+  background-color: blanchedalmond;
+  /* background-image: url(../images/green-salad.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* padding: 13.875rem 0 9.375rem; */
+  padding: 10.875rem 0rem 5rem 0rem;
+  margin-bottom: 3rem;
+}
+.order-btn {
+  border-radius: 30px;
+}
+
+.side-img {
+  display: flex;
+  justify-content: flex-end;
+}
+.side-img img {
+  border-radius: 48%;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.last-content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* border: 2px solid black; */
+}
+
+.info-div {
+  align-content: center;
+  /* border: 2px solid black; */
+  padding: 1.25rem;
+  margin: 0.75rem;
+  border-radius: 1.2rem;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.24);
+}
+
+.info-img {
+  color: #ff9a1e;
+}
+
+.info-title {
+  color: gray;
+}
+
+.info-desc {
+  font-weight: bold;
+}
+
+/* bextselling */
+.bestSelling-carousel .owl-item img {
+  object-fit: contain;
+}
+.bestSelling-carousel.owl-theme .owl-nav {
+  margin-top: 10px;
+  top: -11%;
+  left: 89%;
+}
+.item .best-selling-card {
+  width: 14rem;
+}
+/* menu */
+.see-all {
+  display: flex;
+  justify-content: flex-end;
+}
+.see-all a {
+  color: black;
+  text-decoration: underline;
+}
+.card {
+  width: 100%;
+  padding: 15px;
+  border: none !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+}
+
+.card img {
+  height: 9rem;
+  width: 9rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu .card img {
+  border-radius: 50%;
+}
+.disc1 {
+  display: flex;
+  justify-content: space-between;
+}
+.disc1 h5 {
+  margin: 0;
+}
+
+.disc2 {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #9b9b9b;
+  font-weight: bold;
+}
+.disc3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+  padding-left: 3px;
+  padding-right: 6px;
+}
+.pr-redescription1 {
+  display: flex;
+}
+.pr-redescription1 i {
+  /* border: 1px solid black; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #ff9a1e;
+}
+
+.add-to-cart {
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid orange;
+  height: 35px;
+}
+.add-to-cart button {
+  background-color: transparent;
+  border: none;
+}
+.add-to-cart:hover {
+  transition: 0.3s;
+  background-color: orange;
+}
+.add-to-cart:hover a {
+  transition: 0.3s;
+  color: white;
+}
+.add-to-cart button a {
+  text-decoration: none;
+  color: orange;
+}
+.material-symbols-outlined {
+  color: #535353;
+  cursor: pointer;
+}
+
+.whislist:hover {
+  transition: 0.3s;
+  color: red;
+}
+.p-name span {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.menu-nav-grid {
+  display: grid;
+  /* grid-template-columns: auto auto auto auto auto; */
+  width: max-content;
+  margin: auto;
+  height: 3.125rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+.menu-nav-grid a {
+  padding: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+.menu-nav-grid a:hover {
+  transition: 0.5s;
+  background-color: orange;
+}
+.menu-nav-grid a span {
+  margin-top: -10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* book-now */
+.reserve-table {
+  width: 100%;
+  background-color: #ff9a1e;
+  height: 70vh;
+  display: flex;
+  margin: 150px 0;
+}
+.reserve-table-desc {
+  width: 50%;
+  height: 100%;
+  padding: 40px 0px 20px 100px;
+  /* padding: 50px 0px 150px 10px; */
+  background-color: #ff9a1e;
+  display: flex;
+
+  flex-direction: column;
+}
+.reserve-table-desc .main-btn {
+  padding: 0.3125rem 1.4375rem;
+  box-shadow: none;
+  background-color: black;
+  color: white;
+  width: 9rem;
+  height: 2.5rem;
+}
+.reserve-table-desc h2 {
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+}
+
+.reserve-table-desc p {
+  color: white;
+}
+/* .Book-now {
+  margin-top: 25px;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  width: 9rem;
+} */
+.reserve-table-image {
+  width: 50%;
+  height: 100%;
+}
+.reserve-table-image img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* services */
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+.service-box {
+  border-radius: 0.8rem;
+  /* height: 17rem;
+  width: 16rem; */
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  margin: 12px;
+  box-shadow: 5px 6px 23px -13px rgba(0, 0, 0, 0.75);
+  position: relative;
+}
+.service-box h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff9a1e;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.service-box p {
+  color: gray;
+}
+
+/* get-app */
+.get-app-wrapper {
+  background-color: bisque !important;
+  border-radius: 20px;
+}
+.get-app-box {
+  margin: 9.375rem 0px 20px 0px;
+  padding: 5rem 6rem 0rem 7rem;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  gap: 3rem;
+}
+.get-app-left {
+  margin: auto;
+}
+.mobile-img img {
+  height: 21.25rem;
+  width: 17.5rem;
+
+  margin: 40px 30px -20px 0px;
+}
+
+.abc {
+  height: 8.75rem;
+}
+.bbc {
+  height: 4.375rem;
+}
+/* testomonial */
+.reviews {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  padding: 40px 0px 120px;
+}
+
+.review-div {
+  margin: 12px;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 15px 10px 15px 10px;
+
+  box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.24);
+  width: 20rem;
+}
+.review-img img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px !important;
+  margin-top: 20px;
+}
+
+.review-desc {
+  /* border: 2px solid black; */
+  width: 12rem;
+  padding-left: 30px;
+  float: right;
+}
+.review-desc p {
+  font-size: 13px;
+  color: grey;
+}
+.reviewer {
+  font-weight: bold;
+  font-size: medium;
+}
+.reviewer-1 {
+  color: grey;
+  font-size: small;
+}
+.star span {
+  color: #ff9a1e;
+}
+.owl-nav {
+  position: absolute;
+  top: -30%;
+  left: 90%;
+}
+
+/* newsletter */
+.Newsletter {
+  height: 21.875rem;
+  width: 100%;
+  background-image: url(../images/news.avif);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 7rem;
+}
+.subscribe {
+  text-align: center;
+  margin: auto;
+}
+
+/* button inside input */
+form {
+  /* This bit sets up the horizontal layout */
+  display: flex;
+  flex-direction: row;
+
+  /* This bit draws the box around it */
+  border: 2px solid white;
+
+  /* I've used padding so you can see the edges of the elements. */
+  padding: 2px;
+}
+
+input {
+  /* Tell the input to use all the available space */
+  flex-grow: 2;
+  /* And hide the input's outline, so the form looks like the outline */
+  border: none;
+}
+
+input:focus {
+  /* removing the input focus blue box. Put this on the form if you like. */
+  outline: none;
+}
+
+button {
+  /* Just a little styling to make it pretty */
+  border: 1px solid orange;
+  background: orange;
+  color: white;
+}
+
+/* faq */
+.box-wrapper {
+  padding: 80px 0px;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+.box i {
+  height: 30px;
+  width: 30px;
+}
+/* footer */
+.footer-center ul li {
+  list-style-type: none;
+}
+.footer-center ul li a {
+  line-height: 2rem;
+  color: gray;
+}
+.footer-center p {
+  color: gray;
+  line-height: 2rem;
+}
